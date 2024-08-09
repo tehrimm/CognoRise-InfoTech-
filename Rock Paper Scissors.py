@@ -37,4 +37,13 @@ def play_game():
     else:
         print(f"It's a tie overall with both winning {player_wins} rounds each!")
 
-play_game()
+def main():
+    while True:
+        play_game()
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again != 'y':
+            print("Thanks for playing! Goodbye.")
+            break
+
+if __name__ == "__main__":
+    main()
